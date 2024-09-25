@@ -1,11 +1,11 @@
 {
     "$schema": "./mfdevice.schema.json",
     "Info": {
-      "Label": "Gagagu FCU-EFIS",
-      "Type": "GAGAGU_FCU-EFIS",
-      "Author": "Gagagu/elral",
-      "URL": "https://github.com",
-      "Version" : "1.0.1"
+      "Label": "Hex FCU-EFIS",
+      "Type": "HEX_FCU-EFIS",
+      "Author": "Philippos Slicher",
+      "URL": "https://github.com/philipposslicher/mf-fcu",
+      "Version" : "1.0.2"
     },
     "Config": {
       "Pins": [],

@@ -35,26 +35,26 @@
       "CanInstallFirmware": true,
       "CanResetBoard": true,
       "DelayAfterFirmwareUpdate": 0,
-      "FirmwareBaseName": "gagagu_fcu_efis_mega",
+      "FirmwareBaseName": "hex_fcu_efis_mega",
       "FirmwareExtension": "hex",
       "LatestFirmwareVersion": "0.9.2",
-      "FriendlyName": "Elral Gagagu FCU-EFIS Mega",
-      "MobiFlightType": "Gagagu FCU/EFIS Mega",
+      "FriendlyName": "Hex Design FCU-EFIS Mega",
+      "MobiFlightType": "Hex Design FCU/EFIS Mega",
       "ResetFirmwareFile": "reset.arduino_mega_1_0_2.hex",
       "CustomDeviceTypes": [
-        "GAGAGU_FCU-EFIS"
+        "HEX_FCU-EFIS"
       ],
       "Community": {
-        "Project": "Gagagu FCU_EFIS",
-        "Website": "https://github.com/elral/MobiFlight-FCU_EFIS_OLEDs",
-        "Docs": "https://github.com/elral/MobiFlight-FCU_EFIS_OLEDs",
-        "Support": "https://github.com/elral/MobiFlight-FCU_EFIS_OLEDs"
+        "Project": "Hex FCU_EFIS",
+        "Website": "https://github.com/philipposslicher/mf-fcu",
+        "Docs": "https://github.com/philipposslicher/mf-fcu",
+        "Support": "https://github.com/philipposslicher/mf-fcu"
       },
       "DeviceConfigs": [
         {
           "Name": "FCU/EFIS Display",
           "Description": "FCU and EFIS display with 7 Oled's",
-          "File": "Gagagu FCU-EFIS.mfmc"
+          "File": "Hex FCU-EFIS.mfmc"
         }
       ]
     },
