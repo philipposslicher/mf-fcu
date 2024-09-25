@@ -20,8 +20,8 @@
       "FirmwareBaseName": "hex_fcu_efis_raspberrypico",
       "FirmwareExtension": "uf2",
       "FriendlyName": "Hex Design FCU-EFIS RaspiPico",
-      "LatestFirmwareVersion": "0.9.2",
-      "MobiFlightType": "Hex Design FCU/EFIS RaspiPico",
+      "LatestFirmwareVersion": "0.0.1",
+      "MobiFlightType": "Hex FCU/EFIS RaspiPico",
       "ResetFirmwareFile": "reset.raspberry_pico_flash_nuke.uf2",
       "CustomDeviceTypes": [
         "HEX_FCU-EFIS"

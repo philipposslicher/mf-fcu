@@ -3,7 +3,6 @@
     // for the documentation about the extensions.json format
     "recommendations": [
         "platformio.platformio-ide",
-        "vsls-contrib.codetour"
     ],
     "unwantedRecommendations": [
         "ms-vscode.cpptools-extension-pack"
