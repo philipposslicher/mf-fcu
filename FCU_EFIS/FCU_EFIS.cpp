@@ -533,28 +533,28 @@ void FCU_EFIS::updateDisplayFcuFpa(void)
     oled->setFont(&FreeSans8pt7b);
     oled->setTextSize(1);
     if (lightTestOn == 1) {
-        oled->setCursor(30, 30);
+        oled->setCursor(10, 30);
         oled->println("HDG");
 
-        oled->setCursor(74, 30);
+        oled->setCursor(94, 30);
         oled->println("V/S");
-        oled->setCursor(30, 45);
+        oled->setCursor(10, 45);
         oled->println("TRK");
 
-        oled->setCursor(74, 45);
+        oled->setCursor(94, 45);
         oled->println("FPA");
     } else {
         if (fcuTrkMode == 0) {
-            oled->setCursor(30, 30);
+            oled->setCursor(10, 30);
             oled->println("HDG");
 
-            oled->setCursor(74, 30);
+            oled->setCursor(94, 30);
             oled->println("V/S");
         } else {
-            oled->setCursor(30, 45);
+            oled->setCursor(10, 45);
             oled->println("TRK");
 
-            oled->setCursor(74, 45);
+            oled->setCursor(94, 45);
             oled->println("FPA");
         }
     }
