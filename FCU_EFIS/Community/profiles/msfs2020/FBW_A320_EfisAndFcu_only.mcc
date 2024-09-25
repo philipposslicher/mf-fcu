@@ -1,6 +1,158 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
   <outputs>
+    <config guid="993c7d97-fd94-4db1-b485-81ebe72557f5">
+      <active>true</active>
+      <description>FCU/SPD</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOPILOT_SPEED_SELECTED)" UUID="75c16739-da7d-4cfb-aad1-c4607104321e" />
+        <test type="String" value="0.2300000" />
+        <modifiers>
+          <transformation active="True" expression="Round($, 2)" />
+        </modifiers>
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="8" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9a7fa3b6-ba80-45e6-8ce1-7720746f686e">
+      <active>true</active>
+      <description>FCU/HDG</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOPILOT_HEADING_SELECTED)" UUID="117d27df-930b-4a92-968b-2c71dbce1edc" />
+        <test type="Float" value="50" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="10" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6776c47c-7dea-480e-a50d-91477b3d496c">
+      <active>true</active>
+      <description>FCU/SPD_MANAGED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_SPD_MANAGED_DASHES)" UUID="c6839009-1298-4277-adb4-3600a73910f8" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="9" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b6481347-a379-4de4-b8c5-5b9be3dd31ca">
+      <active>true</active>
+      <description>FCU/MACH_MODE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOPILOT_SPEED_SELECTED)" UUID="75c16739-da7d-4cfb-aad1-c4607104321e" />
+        <test type="String" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="18" value="$" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="993c7d97-fd94-4db1-b485-81ebe72557f5" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8c8f5f0f-6af3-4f2a-aa60-bcb6a1c8f66e">
+      <active>true</active>
+      <description>FCU/HDG_MANAGED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_HDG_MANAGED_DOT)" UUID="015e79b3-c73d-4d04-bfa7-08ec67826b41" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="11" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5a785ad0-b47f-4c7c-88f0-6ae199e1b2e0">
+      <active>true</active>
+      <description>FCU/HDG_TRK</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_TRK_FPA_MODE_ACTIVE)" UUID="c146f4c9-13dd-4a4f-b531-a90c39931acb" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="12" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3e85f314-ea2f-4294-a0d7-8022ed7f13a1">
+      <active>true</active>
+      <description>FCU/ALT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT ALTITUDE LOCK VAR:3, Feet)" UUID="d4f30cbf-baed-432d-b110-c7ed94dec775" />
+        <test type="Float" value="5000" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="13" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="373f551e-e188-4091-9ea0-ca396dcfa258">
+      <active>true</active>
+      <description>FCU/ALT_MANAGED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_ALT_MANAGED)" UUID="01080513-2a03-4e42-981b-bd0692ab7646" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="14" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5c2c2ae4-bd21-4bb0-8d11-61c2eb273f32">
+      <active>true</active>
+      <description>FCU/VS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOPILOT_VS_SELECTED)" UUID="bb5af9a4-b690-45e6-b02a-b81a5b137ed5" />
+        <test type="Float" value="0" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="15" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="21d5b3c1-13ae-418f-a207-ab529232f0f6">
+      <active>true</active>
+      <description>FCU/VS_MANAGED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_VS_MANAGED)" UUID="17c91c46-676d-41d6-9108-893e8d0731ed" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="17" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8db13cc4-65cd-4a2c-a1bb-00ceadcf25a2">
+      <active>true</active>
+      <description>FCU/FPA</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOPILOT_FPA_SELECTED)" UUID="78986662-976f-4743-9f21-4f9f191f5385" />
+        <test type="Float" value="155" />
+        <modifiers>
+          <transformation active="True" expression="Round($, 2)" />
+        </modifiers>
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="16" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="957f4942-e7c9-451c-8fe5-517b53bc0c9f">
+      <active>true</active>
+      <description>FCU/LIGHT_TEST</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="LightTest" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="19" value="$" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
     <config guid="d18d87ce-6c1d-4006-96ac-a52f6af8e15b">
       <active>false</active>
       <description>EFIS_L/BARO_SELECT</description>
@@ -56,176 +208,6 @@
           <comparison active="True" value="0" operand="=" ifValue="1" elseValue="2" />
         </modifiers>
         <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="3" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="aad1c5ad-9dd5-44d2-be01-d0f9d6938a15">
-      <active>true</active>
-      <description>FCU/SPD</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:FNX2PLD_fcuSpd, Knots)" UUID="82853f1e-dcc2-4748-bb34-c145ef748598" />
-        <test type="Float" value="450" />
-        <modifiers>
-          <comparison active="True" value="100" operand="&lt;" ifValue="0.$" elseValue="" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="8" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="f14e8c61-d8ec-44fb-825f-29a6191072fd">
-      <active>true</active>
-      <description>FCU/SPD_MANAGED</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_SPEED_MANAGED)" UUID="28029cad-8379-419c-ba1f-589cada617fa" />
-        <test type="Float" value="1" />
-        <modifiers>
-          <transformation active="False" expression="$" />
-          <comparison active="False" value="2" operand="=" ifValue="1" elseValue="0" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="9" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="446fa43d-0f89-44a1-8edb-d9c555692119">
-      <active>true</active>
-      <description>FCU/HDG</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:FNX2PLD_fcuHdg,Degrees)" UUID="93407070-d47f-48a7-9537-4d8ca18f0d89" />
-        <test type="Float" value="254" />
-        <modifiers>
-          <transformation active="False" expression="$" />
-          <comparison active="False" value="100" operand="&lt;" ifValue="'0'+$" elseValue="$" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="10" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="bc49c326-f9c3-4d5d-97ab-c96e8f86737c">
-      <active>true</active>
-      <description>FCU/HDG_MANAGED</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_HEADING_MANAGED)" UUID="b7a4af17-9112-4a88-9629-e10acdd604e8" />
-        <test type="Float" value="1" />
-        <modifiers>
-          <transformation active="False" expression="$" />
-          <comparison active="False" value="2" operand="=" ifValue="1" elseValue="0" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="11" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="dd2510c3-0a7a-4ce4-ba59-2b61608fa910">
-      <active>true</active>
-      <description>FCU/HDG_TRK</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_TRACK_FPA_MODE)" UUID="0c24f12b-0016-4da7-b941-587a581e5686" />
-        <test type="Float" value="1" />
-        <modifiers>
-          <transformation active="False" expression="$" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="12" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="c775b9fb-eff2-49b1-9223-98f01b6aceb5">
-      <active>true</active>
-      <description>FCU/ALT</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:FNX2PLD_fcuAlt, Feet)" UUID="a7c09623-b340-441c-9087-4bbec9b41bc4" />
-        <test type="Float" value="12350" />
-        <modifiers />
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="13" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="69a7542f-ac7f-4c3e-a25b-77f3253407ea">
-      <active>true</active>
-      <description>FCU/ALT_MANAGED</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_ALTITUDE_MANAGED)" UUID="bca70365-cd7c-4408-ad8e-4d7c5f578166" />
-        <test type="Float" value="1" />
-        <modifiers>
-          <transformation active="False" expression="$" />
-          <comparison active="False" value="2" operand="=" ifValue="1" elseValue="0" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="14" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="26fbb7d5-2bad-4d72-a31d-8344528f5a0d">
-      <active>true</active>
-      <description>FCU/VS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:FNX2PLD_fcuVs, Ft/min)" UUID="8689ddbb-7786-4805-add4-05cd92ea249c" />
-        <test type="Float" value="1234" />
-        <modifiers>
-          <transformation active="False" expression="$" />
-          <comparison active="False" value="" operand="&lt;" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="15" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="e7f869e0-9ff3-408d-a7f6-583d064ede42">
-      <active>true</active>
-      <description>FCU/VS_MANAGED</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_VS_MANAGED)" UUID="2bddc0c5-0842-4686-8c7b-b902dd8b236b" />
-        <test type="Float" value="1" />
-        <modifiers>
-          <transformation active="False" expression="$" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="17" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="ecda4002-feea-4249-8b14-f01fe1529830">
-      <active>true</active>
-      <description>FCU/FPA</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:FNX2PLD_fcuVs, Ft/min)" UUID="8689ddbb-7786-4805-add4-05cd92ea249c" />
-        <test type="Float" value="1" />
-        <modifiers>
-          <transformation active="True" expression="Round($,2)" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="16" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="a1d2cf13-9c0c-4ab2-a85a-eec0ac6f0044">
-      <active>true</active>
-      <description>FCU/MACH_MODE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:I_FCU_MACH_MODE)" UUID="cf9c73a0-ab34-455b-866d-f47c09d19336" />
-        <test type="Float" value="1" />
-        <modifiers />
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="18" value="$" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="9c746246-2356-46e2-9744-92c9729356d1">
-      <active>true</active>
-      <description>FCU/LIGHT_TEST</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_APU_AUTOEXTING_TEST_L)" UUID="030e2291-3306-4092-b8a1-7b42f0f1f918" />
-        <test type="Float" value="1" />
-        <modifiers />
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="19" value="$" />
         <preconditions />
         <configrefs />
       </settings>
