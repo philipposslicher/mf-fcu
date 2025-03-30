@@ -56,10 +56,10 @@
       </settings>
     </config>
     <config guid="8c8f5f0f-6af3-4f2a-aa60-bcb6a1c8f66e">
-      <active>false</active>
+      <active>true</active>
       <description>FCU/HDG_MANAGED</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_HDG_MANAGED_DOT)" UUID="015e79b3-c73d-4d04-bfa7-08ec67826b41" />
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_HDG_MANAGED_DASHES)" UUID="680884c9-1f24-448b-ab73-67b0de45d803" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-4F6-017" trigger="normal" customType="" customName="HEX FCU-EFIS" messageType="11" value="$" />
@@ -136,7 +136,7 @@
         <modifiers>
           <transformation active="True" expression="Round($, 2)" />
         </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-4F6-017" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="16" value="$" />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-4F6-017" trigger="normal" customType="" customName="HEX FCU-EFIS" messageType="16" value="$" />
         <preconditions />
         <configrefs />
       </settings>
@@ -230,7 +230,9 @@
       <active>true</active>
       <description>FCU/LOC</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="Hex FCU-EFIS/ SN-4F6-017" name="FCU-LOC-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button />
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:A32NX.FCU_LOC_PUSH)" presetId="cbd428d7-d050-416c-a11e-f49611ad4890" />
+        </button>
         <preconditions />
         <configrefs />
       </settings>
@@ -263,7 +265,7 @@
     <config guid="1931e137-ab40-4081-bfd9-b1617d779b13">
       <active>true</active>
       <description>FCU/HDG_PULL</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="Hex FCU-EFIS/ SN-4F6-017" name="FCU-HDG-PUSH-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="Hex FCU-EFIS/ SN-4F6-017" name="FCU-HDG-PULL-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:A32NX.FCU_HDG_PULL)" presetId="73967ccf-e9c7-49df-8119-5e50d315d3af" />
         </button>
