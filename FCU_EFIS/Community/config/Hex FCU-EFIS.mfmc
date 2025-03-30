@@ -11,4 +11,7 @@
   <Button Name="FCU-LOC-BTN" Pin="2" />
   <Output Name="FCU-LOC-LED" Pin="3" />
   <Encoder Name="FCU-HDG-ENC" PinLeft="52" PinRight="53" EncoderType="1" />
+  <Button Name="FCU-HDG-TRK-BTN" Pin="50" />
+  <Button Name="FCU-HDG-PULL-BTN" Pin="4" />
+  <Button Name="FCU-HDG-PUSH-BTN" Pin="5" />
 </Config>
