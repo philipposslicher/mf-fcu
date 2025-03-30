@@ -8,4 +8,7 @@
       <string>112</string>
     </ConfiguredPins>
   </CustomDevice>
+  <Button Name="FCU-LOC-BTN" Pin="2" />
+  <Output Name="FCU-LOC-LED" Pin="3" />
+  <Encoder Name="FCU-HDG-ENC" PinLeft="52" PinRight="53" EncoderType="1" />
 </Config>
