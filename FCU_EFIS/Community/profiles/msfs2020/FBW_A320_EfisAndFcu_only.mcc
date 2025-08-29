@@ -10,7 +10,7 @@
         <modifiers>
           <transformation active="True" expression="Round($, 2)" />
         </modifiers>
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="HEX FCU-EFIS" messageType="8" value="$" />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="8" value="$" />
         <preconditions />
         <configrefs />
       </settings>
@@ -22,7 +22,7 @@
         <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOPILOT_HEADING_SELECTED)" UUID="117d27df-930b-4a92-968b-2c71dbce1edc" />
         <test type="Float" value="50" />
         <modifiers />
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="HEX FCU-EFIS" messageType="10" value="$" />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="10" value="$" />
         <preconditions />
         <configrefs />
       </settings>
@@ -62,7 +62,7 @@
         <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_HDG_MANAGED_DASHES)" UUID="680884c9-1f24-448b-ab73-67b0de45d803" />
         <test type="Float" value="1" />
         <modifiers />
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="HEX FCU-EFIS" messageType="11" value="$" />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="11" value="$" />
         <preconditions />
         <configrefs />
       </settings>
@@ -74,7 +74,7 @@
         <source type="SimConnect" VarType="CODE" Value="(L:A32NX_TRK_FPA_MODE_ACTIVE)" UUID="c146f4c9-13dd-4a4f-b531-a90c39931acb" />
         <test type="Float" value="1" />
         <modifiers />
-        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="HEX FCU-EFIS" messageType="12" value="$" />
+        <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="12" value="$" />
         <preconditions />
         <configrefs />
       </settings>
