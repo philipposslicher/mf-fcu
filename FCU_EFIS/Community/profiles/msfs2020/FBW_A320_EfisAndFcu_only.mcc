@@ -43,16 +43,12 @@
       <active>true</active>
       <description>FCU/MACH_MODE</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOPILOT_SPEED_SELECTED)" UUID="75c16739-da7d-4cfb-aad1-c4607104321e" />
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FCU_AFS_DISPLAY_MACH_MODE, Bool)" UUID="78680274-52ae-42d1-a0d9-e4b5df50e582" />
         <test type="String" value="1" />
-        <modifiers>
-          <comparison active="True" value="1" operand="&lt;" ifValue="1" elseValue="0" />
-        </modifiers>
+        <modifiers />
         <display type="CustomDevice" serial="Hex FCU-EFIS/ SN-G88-57F" trigger="normal" customType="" customName="Hex FCU-EFIS" messageType="18" value="$" />
         <preconditions />
-        <configrefs>
-          <configref active="True" ref="993c7d97-fd94-4db1-b485-81ebe72557f5" placeholder="#" testvalue="1" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="8c8f5f0f-6af3-4f2a-aa60-bcb6a1c8f66e">
@@ -227,7 +223,7 @@
   </outputs>
   <inputs>
     <config guid="aab244fa-6eda-4e04-86e0-ea75ef0016b0">
-      <active>true</active>
+      <active>false</active>
       <description>FCU/LOC</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="Hex FCU-EFIS/ SN-G88-57F" name="FCU-LOC-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
@@ -238,7 +234,7 @@
       </settings>
     </config>
     <config guid="61c59b9c-1c6b-4f9c-9b33-6c54ee22e273">
-      <active>true</active>
+      <active>false</active>
       <description>FCU/HDG</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="Hex FCU-EFIS/ SN-G88-57F" name="FCU-HDG-ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
@@ -252,7 +248,7 @@
       </settings>
     </config>
     <config guid="9a940db2-1607-4c09-80a5-60d876421d59">
-      <active>true</active>
+      <active>false</active>
       <description>FCU/HDG_TRK</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="Hex FCU-EFIS/ SN-G88-57F" name="FCU-HDG-TRK-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
@@ -263,7 +259,7 @@
       </settings>
     </config>
     <config guid="1931e137-ab40-4081-bfd9-b1617d779b13">
-      <active>true</active>
+      <active>false</active>
       <description>FCU/HDG_PULL</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="Hex FCU-EFIS/ SN-G88-57F" name="FCU-HDG-PULL-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
@@ -274,7 +270,7 @@
       </settings>
     </config>
     <config guid="987881af-0ab1-425c-affa-9378173bd12c">
-      <active>true</active>
+      <active>false</active>
       <description>FCU/HDG_PUSH</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="Hex FCU-EFIS/ SN-G88-57F" name="FCU-HDG-PUSH-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
